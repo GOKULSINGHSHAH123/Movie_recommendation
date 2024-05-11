@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<body>
+
+    <div>
+        <h1 id="heading"> Movie Recommender System</h1>
+    </div>
+    <form id="movieForm">
+        <div class="search">
+            <input class="searchbar" type="text" placeholder="Enter your movie name" name="movieName"
+            onclick="toggleDropdown()" onkeyup="filterFunction()">
+                <div id="dropdown" class="dropdown-content">
+                    
+                </div>
+
+
+        </div>
+
+        <button type="submit" class="button">Recommend Movies</button>
+    </form>
+
+
+    <div id="movies-container">
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
